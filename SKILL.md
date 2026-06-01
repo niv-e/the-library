@@ -12,9 +12,9 @@ A meta-skill for private-first distribution of agentics (skills, agents, and pro
 
 > Update these after forking and cloning the library repo.
 
-- **LIBRARY_REPO_URL**: `<your forked repo url>`
-- **LIBRARY_YAML_PATH**: `~/.claude/skills/library/library.yaml`
-- **LIBRARY_SKILL_DIR**: `~/.claude/skills/library/`
+- **LIBRARY_REPO_URL**: `https://github.dev/niv-e/the-library`
+- **LIBRARY_YAML_PATH**: `~/.agents/skills/library/library.yaml`
+- **LIBRARY_SKILL_DIR**: `~/.agents/skills/library/`
 
 ## How It Works
 
@@ -113,14 +113,14 @@ By default, items are installed to the **default** directory from `library.yaml`
 ```yaml
 default_dirs:
     skills:
-        - default: .claude/skills/
-        - global: ~/.claude/skills/
+        - default: .agents/skills/
+        - global: ~/.agents/skills/
     agents:
-        - default: .claude/agents/
-        - global: ~/.claude/agents/
+        - default: .agents/agents/
+        - global: ~/.agents/agents/
     prompts:
-        - default: .claude/commands/
-        - global: ~/.claude/commands/
+        - default: .agents/commands/
+        - global: ~/.agents/commands/
 ```
 
 - If the user says "global" or "globally", use the `global` directory.
@@ -141,14 +141,14 @@ This keeps the catalog in sync across devices.
 ```yaml
 default_dirs:
   skills:
-    - default: .claude/skills/
-    - global: ~/.claude/skills/
+    - default: .agents/skills/
+    - global: ~/.agents/skills/
   agents:
-    - default: .claude/agents/
-    - global: ~/.claude/agents/
+    - default: .agents/agents/
+    - global: ~/.agents/agents/
   prompts:
-    - default: .claude/prompts/
-    - global: ~/.claude/prompts/
+    - default: .agents/prompts/
+    - global: ~/.agents/prompts/
 
 library:
   skills:
